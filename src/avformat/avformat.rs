@@ -492,6 +492,7 @@ impl AVOutputFormat {
 wrap_ref_mut!(#[repr(transparent)] AVStream: ffi::AVStream);
 settable!(AVStream {
     time_base: AVRational,
+    discard: i32,
 });
 
 impl AVStream {
